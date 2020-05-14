@@ -86,7 +86,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/sugarlabs/Measure.git",
-                    "commit": "02a4b0730c10f1d367608fb00adeeba598df079a"
+                    "tag": "v103",
+                    "commit": "278813082b07a5d79119800aedc940dd4e0ac819"
                 },
                 {
                     "type": "patch",
@@ -107,6 +108,10 @@
                 {
                     "type": "patch",
                     "path": "measure-fix-hw-detection.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "measure-fix-overflow.patch"
                 }
             ],
             "post-install": [
