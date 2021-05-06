@@ -1,9 +1,9 @@
 {
     "app-id": "org.sugarlabs.Measure",
     "base": "org.sugarlabs.BaseApp",
-    "base-version": "20.04",
+    "base-version": "21.04",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "40",
     "sdk": "org.gnome.Sdk",
     "separate-locales": false,
     "command": "sugarapp",
@@ -27,7 +27,7 @@
             "name": "numpy",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --no-index --find-links=\"file://${PWD}\" --install-option=\"--prefix=${FLATPAK_DEST}\" numpy"
+                "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} numpy"
             ],
             "sources": [
                 {
@@ -55,8 +55,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/csound/csound.git",
-                    "tag": "6.13.0",
-                    "commit": "297845a370b8b5e1b555a60a0be3c5c757599530"
+                    "tag": "6.15.0",
+                    "commit": "18c2c7897425f462b9a7743cee157cb410c88198"
                 }
             ]
         },
