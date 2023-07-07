@@ -52,6 +52,10 @@
             "name": "csound",
             "buildsystem": "cmake",
             "build-options": {
+                "env": {
+                    "PYTHONHOME": "/app",
+                    "PYTHONPATH": "/usr/lib/python3.10"
+                },
                 "arch": {
                     "arm": {
                         "config-opts": [
@@ -66,8 +70,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/csound/csound.git",
-                    "tag": "6.15.0",
-                    "commit": "18c2c7897425f462b9a7743cee157cb410c88198"
+                    "tag": "6.18.1",
+                    "commit": "a1580f9cdf331c35dceb486f4231871ce0b00266",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         },
