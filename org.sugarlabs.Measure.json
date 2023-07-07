@@ -112,7 +112,11 @@
                     "type": "git",
                     "url": "https://github.com/sugarlabs/Measure.git",
                     "tag": "v103",
-                    "commit": "278813082b07a5d79119800aedc940dd4e0ac819"
+                    "commit": "278813082b07a5d79119800aedc940dd4e0ac819",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    }
                 },
                 {
                     "type": "patch",
