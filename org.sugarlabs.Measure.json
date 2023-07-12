@@ -1,9 +1,9 @@
 {
     "app-id": "org.sugarlabs.Measure",
     "base": "org.sugarlabs.BaseApp",
-    "base-version": "22.06",
+    "base-version": "23.06",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "separate-locales": false,
     "command": "sugarapp",
@@ -32,8 +32,12 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://github.com/numpy/numpy/releases/download/v1.22.4/numpy-1.22.4.zip",
-                    "sha256": "425b390e4619f58d8526b3dcf656dde069133ae5c240229821f01b5f44ea07af"
+                    "url": "https://files.pythonhosted.org/packages/d0/b2/fe774844d1857804cc884bba67bec38f649c99d0dc1ee7cbbf1da601357c/numpy-1.25.0.tar.gz",
+                    "sha256": "f1accae9a28dc3cda46a91de86acf69de0d1b5f4edd44a9b0c3ceb8036dfff19",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "numpy"
+                    }
                 }
             ],
             "cleanup": [
@@ -48,6 +52,10 @@
             "name": "csound",
             "buildsystem": "cmake",
             "build-options": {
+                "env": {
+                    "PYTHONHOME": "/app",
+                    "PYTHONPATH": "/usr/lib/python3.10"
+                },
                 "arch": {
                     "arm": {
                         "config-opts": [
@@ -62,8 +70,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/csound/csound.git",
-                    "tag": "6.15.0",
-                    "commit": "18c2c7897425f462b9a7743cee157cb410c88198"
+                    "tag": "6.18.1",
+                    "commit": "a1580f9cdf331c35dceb486f4231871ce0b00266",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         },
@@ -78,8 +90,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "ftp://ftp.alsa-project.org/pub/utils/alsa-utils-1.2.1.tar.bz2",
-                    "sha256": "0b110ba71ef41d3009db1bc4dcae0cf79efb99cb5426fa19d0312470560a2c0d"
+                    "url": "https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.9.tar.bz2",
+                    "sha256": "e7623d4525595f92e11ce25ee9a97f2040a14c6e4dcd027aa96e06cbce7817bd",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://www.alsa-project.org/files/pub/utils/",
+                        "pattern": "<a href=\"(alsa-utils-([\\d\\.]+\\d).tar.bz2)\">"
+                        
+                    }
                 }
             ]
         },
@@ -94,7 +112,11 @@
                     "type": "git",
                     "url": "https://github.com/sugarlabs/Measure.git",
                     "tag": "v103",
-                    "commit": "278813082b07a5d79119800aedc940dd4e0ac819"
+                    "commit": "278813082b07a5d79119800aedc940dd4e0ac819",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    }
                 },
                 {
                     "type": "patch",
