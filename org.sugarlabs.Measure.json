@@ -32,8 +32,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d0/b2/fe774844d1857804cc884bba67bec38f649c99d0dc1ee7cbbf1da601357c/numpy-1.25.0.tar.gz",
-                    "sha256": "f1accae9a28dc3cda46a91de86acf69de0d1b5f4edd44a9b0c3ceb8036dfff19",
+                    "url": "https://files.pythonhosted.org/packages/cf/7a/f68d1d658a0e68084097beb212fa9356fee7eabff8b57231cc4acb555b12/numpy-1.25.1.tar.gz",
+                    "sha256": "9a3a9f3a61480cc086117b426a8bd86869c213fc4072e606f01c4e4b66eb92bf",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "numpy"
@@ -81,7 +81,9 @@
         },
         {
             "name": "alsa-utils",
-            "cleanup": [ "/null" ],
+            "cleanup": [
+                "/null"
+            ],
             "buildsystem": "simple",
             "build-commands": [
                 "./configure --prefix=/app --disable-alsaconf --with-udev-rules-dir=/app/null --with-systemdsystemunitdir=/app/null",
@@ -96,7 +98,6 @@
                         "type": "html",
                         "url": "https://www.alsa-project.org/files/pub/utils/",
                         "pattern": "<a href=\"(alsa-utils-([\\d\\.]+\\d).tar.bz2)\">"
-                        
                     }
                 }
             ]
