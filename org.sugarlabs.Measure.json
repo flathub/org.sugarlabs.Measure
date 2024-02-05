@@ -81,7 +81,9 @@
         },
         {
             "name": "alsa-utils",
-            "cleanup": [ "/null" ],
+            "cleanup": [
+                "/null"
+            ],
             "buildsystem": "simple",
             "build-commands": [
                 "./configure --prefix=/app --disable-alsaconf --with-udev-rules-dir=/app/null --with-systemdsystemunitdir=/app/null",
@@ -90,13 +92,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.9.tar.bz2",
-                    "sha256": "e7623d4525595f92e11ce25ee9a97f2040a14c6e4dcd027aa96e06cbce7817bd",
+                    "url": "https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.11.tar.bz2",
+                    "sha256": "9ac6ca3a883f151e568dcf979b8d2e5cbecc51b819bb0e6bb8a2e9b34cc428a7",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.alsa-project.org/files/pub/utils/",
                         "pattern": "<a href=\"(alsa-utils-([\\d\\.]+\\d).tar.bz2)\">"
-                        
                     }
                 }
             ]
