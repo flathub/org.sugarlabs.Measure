@@ -57,7 +57,7 @@
             "build-options": {
                 "env": {
                     "PYTHONHOME": "/app",
-                    "PYTHONPATH": "/usr/lib/python3.10"
+                    "PYTHONPATH": "/usr/lib/python3.11"
                 },
                 "arch": {
                     "arm": {
