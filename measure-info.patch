@@ -2,7 +2,7 @@ diff --git a/activity/activity.info b/activity/activity.info
 index f4bed90..599a52a 100755
 --- a/activity/activity.info
 +++ b/activity/activity.info
-@@ -1,16 +1,17 @@
+@@ -1,16 +1,18 @@
  [Activity]
  name = Measure
 -bundle_id = org.laptop.MeasureActivity
@@ -27,5 +27,6 @@ index f4bed90..599a52a 100755
 +description = Measure is a tool that turns the computer into an oscilloscope. You can easily visualize your voice or even a musical instrument. It provides an interface for the kids to connect with the physical world and an opportunity to view and understand through a visual and statistical representations.
 +screenshots = https://raw.githubusercontent.com/sugarlabs/Measure/master/screenshots/en/1.png https://raw.githubusercontent.com/sugarlabs/Measure/master/screenshots/en/2.png https://raw.githubusercontent.com/sugarlabs/Measure/master/screenshots/en/3.png
 +update_contact = tch@sugarlabs.org
++developer_id = org.sugarlabs
 +developer_name = Sugar Labs Community
 
